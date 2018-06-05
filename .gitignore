@@ -1,0 +1,8 @@
+
+*.lock
+*.ide
+*.ide-wal
+*.ide-shm
+.vs/McLittle/v15/.suo
+*.cache
+*.cache
