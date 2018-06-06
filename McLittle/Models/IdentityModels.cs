@@ -29,5 +29,9 @@ namespace McLittle.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Product> product { get; set; }
+        public DbSet<Category> category { get; set; }
+        public DbSet<SubCategory> subcategory { get; set; }
+        public DbSet<SubSubCategory> subsubCategory { get; set; }
     }
 }
