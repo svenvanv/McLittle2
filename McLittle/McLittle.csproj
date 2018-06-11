@@ -189,6 +189,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
+    <Compile Include="Areas\CMS\Controllers\CMSController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -219,6 +221,19 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\CMS\CSS\sb-admin.css" />
+    <Content Include="Areas\CMS\Scripts\sb-admin-charts.js" />
+    <Content Include="Areas\CMS\Scripts\sb-admin-charts.min.js" />
+    <Content Include="Areas\CMS\Scripts\sb-admin-datatables.js" />
+    <Content Include="Areas\CMS\Scripts\sb-admin-datatables.min.js" />
+    <Content Include="Areas\CMS\Scripts\sb-admin.js" />
+    <Content Include="Areas\CMS\Scripts\sb-admin.min.js" />
+    <Content Include="Areas\CMS\Views\CMS\blank.cshtml" />
+    <Content Include="Areas\CMS\Views\CMS\cards.cshtml" />
+    <Content Include="Areas\CMS\Views\CMS\charts.cshtml" />
+    <Content Include="Areas\CMS\Views\CMS\index.cshtml" />
+    <Content Include="Areas\CMS\Views\CMS\forgot_password.cshtml" />
+    <Content Include="Areas\CMS\Views\CMS\navbar.cshtml" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -230,6 +245,23 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Areas\CMS\Views\web.config" />
+    <Content Include="Areas\CMS\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\CMS\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\CMS\Views\CMS\tables.cshtml" />
+    <Content Include="Areas\CMS\CSS\navbar\_navbar_colors.scss" />
+    <Content Include="Areas\CMS\CSS\navbar\_navbar_fixed.scss" />
+    <Content Include="Areas\CMS\CSS\navbar\_navbar_global.scss" />
+    <Content Include="Areas\CMS\CSS\navbar\_navbar_static.scss" />
+    <Content Include="Areas\CMS\CSS\navbar\_navbar_toggle.scss" />
+    <Content Include="Areas\CMS\CSS\sb-admin.scss" />
+    <Content Include="Areas\CMS\CSS\_cards.scss" />
+    <Content Include="Areas\CMS\CSS\_footer.scss" />
+    <Content Include="Areas\CMS\CSS\_global.scss" />
+    <Content Include="Areas\CMS\CSS\_login.scss" />
+    <Content Include="Areas\CMS\CSS\_mixins.scss" />
+    <Content Include="Areas\CMS\CSS\_utilities.scss" />
+    <Content Include="Areas\CMS\CSS\_variables.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -278,6 +310,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\CMS\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

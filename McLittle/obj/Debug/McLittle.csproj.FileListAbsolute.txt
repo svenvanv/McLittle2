@@ -72,3 +72,4 @@ C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.pdb
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.loginsystem.resources
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.GenerateResource.Cache
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.projectbasis.resources
+C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.roles.resources
