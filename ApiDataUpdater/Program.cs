@@ -14,8 +14,10 @@ namespace ApiDataUpdater
         static int count;
         static void Main(string[] args)
         {
-            updateProduct();
+            //updateProduct();
             updateCategory();
+            updateSubCategory();
+            updateSubSubCategory();
             updatePromotions();
             updateDelivery();
 
@@ -37,7 +39,7 @@ namespace ApiDataUpdater
                 count++;
                 Console.WriteLine("Toevoegen aan database EAN = " + XmlNode["EAN"].InnerText + " product nummer " + count);
 
-                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-McLittle-20180516011236.mdf");
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
 
                 con.Open();
                 //Table veranderen naar products hieronder!!
@@ -72,6 +74,44 @@ namespace ApiDataUpdater
 
             XmlElement xmlRoot = doc.DocumentElement;
             XmlNodeList xmlNodes = xmlRoot.SelectNodes("/Categories/Category");
+            count = 0;
+            foreach (XmlNode XmlNode in xmlNodes)
+            {
+                count++;
+                Console.WriteLine("Toevoegen aan database naam = " + XmlNode["Name"].InnerText + " category nummer " + count);
+
+                //using (var connection = new SqlConnection(@"");
+            }
+            Console.WriteLine("Categorieen toegevoegd " + count);
+        }
+
+        static void updateSubCategory()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(baseUri + "categories");
+            string xmlContent = doc.InnerXml;
+
+            XmlElement xmlRoot = doc.DocumentElement;
+            XmlNodeList xmlNodes = xmlRoot.SelectNodes("/Categories/Category/Subcategory");
+            count = 0;
+            foreach (XmlNode XmlNode in xmlNodes)
+            {
+                count++;
+                Console.WriteLine("Toevoegen aan database naam = " + XmlNode["Name"].InnerText + " category nummer " + count);
+
+                //using (var connection = new SqlConnection(@"");
+            }
+            Console.WriteLine("Categorieen toegevoegd " + count);
+        }
+
+        static void updateSubSubCategory()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(baseUri + "categories");
+            string xmlContent = doc.InnerXml;
+
+            XmlElement xmlRoot = doc.DocumentElement;
+            XmlNodeList xmlNodes = xmlRoot.SelectNodes("/Categories/Category/Subcategory/Subsubcategory");
             count = 0;
             foreach (XmlNode XmlNode in xmlNodes)
             {

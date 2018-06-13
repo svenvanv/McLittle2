@@ -4,3 +4,4 @@ C:\Users\Sven\Documents\GitHub\McLittle2\ApiDataUpdater\bin\Debug\ApiDataUpdater
 C:\Users\Sven\Documents\GitHub\McLittle2\ApiDataUpdater\obj\Debug\ApiDataUpdater.csproj.CoreCompileInputs.cache
 C:\Users\Sven\Documents\GitHub\McLittle2\ApiDataUpdater\obj\Debug\ApiDataUpdater.exe
 C:\Users\Sven\Documents\GitHub\McLittle2\ApiDataUpdater\obj\Debug\ApiDataUpdater.pdb
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiDataUpdater\obj\Debug\ApiDataUpdater.csprojResolveAssemblyReference.cache

@@ -380,7 +380,8 @@
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_variables.scss" />
-    <Content Include="Areas\CMS\Views\CMS\Index.cshtml" />
+    <Content Include="Areas\CMS\Views\CMS\index.cshtml" />
+    <Content Include="Areas\CMS\Views\CMS\tables.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
