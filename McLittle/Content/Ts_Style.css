@@ -1,0 +1,10 @@
+﻿.Ts_header {
+    text-align: center;
+    background-image: url('Images/beef-cooking-delicious-769289.jpg');
+    width: 140%;
+    margin-left: -20%;
+    padding: 40px 10px;
+}
+.Ts_header .jumbotron{
+    background-color: rgba();
+}
