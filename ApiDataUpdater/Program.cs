@@ -14,8 +14,10 @@ namespace ApiDataUpdater
         static int count;
         static void Main(string[] args)
         {
-            updateProduct();
-            updateCategory();
+            //updateProduct();
+            //updateCategory();
+            //updateSubCategory();
+            //updateSubSubCategory();
             updatePromotions();
             updateDelivery();
 
@@ -37,7 +39,7 @@ namespace ApiDataUpdater
                 count++;
                 Console.WriteLine("Toevoegen aan database EAN = " + XmlNode["EAN"].InnerText + " product nummer " + count);
 
-                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-McLittle-20180516011236.mdf");
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
 
                 con.Open();
                 //Table veranderen naar products hieronder!!
@@ -77,7 +79,75 @@ namespace ApiDataUpdater
             {
                 count++;
                 Console.WriteLine("Toevoegen aan database naam = " + XmlNode["Name"].InnerText + " category nummer " + count);
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
 
+                con.Open();
+                //Table veranderen naar products hieronder!!
+                var sql = "INSERT INTO Categories(Title) Values(@Name)";
+                using (var cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Name", XmlNode["Name"].InnerText);
+
+                    cmd.ExecuteNonQuery();
+                }
+                //using (var connection = new SqlConnection(@"");
+            }
+            Console.WriteLine("Categorieen toegevoegd " + count);
+        }
+
+        static void updateSubCategory()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(baseUri + "categories");
+            string xmlContent = doc.InnerXml;
+
+            XmlElement xmlRoot = doc.DocumentElement;
+            XmlNodeList xmlNodes = xmlRoot.SelectNodes("/Categories/Category/Subcategory");
+            count = 0;
+            foreach (XmlNode XmlNode in xmlNodes)
+            {
+                count++;
+                Console.WriteLine("Toevoegen aan database naam = " + XmlNode["Name"].InnerText + " category nummer " + count);
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
+
+                con.Open();
+                //Table veranderen naar products hieronder!!
+                var sql = "INSERT INTO SubCategories(Title) Values(@Name)";
+                using (var cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Name", XmlNode["Name"].InnerText);
+
+                    cmd.ExecuteNonQuery();
+                }
+                //using (var connection = new SqlConnection(@"");
+            }
+            Console.WriteLine("Categorieen toegevoegd " + count);
+        }
+
+        static void updateSubSubCategory()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(baseUri + "categories");
+            string xmlContent = doc.InnerXml;
+
+            XmlElement xmlRoot = doc.DocumentElement;
+            XmlNodeList xmlNodes = xmlRoot.SelectNodes("/Categories/Category/Subcategory/Subsubcategory");
+            count = 0;
+            foreach (XmlNode XmlNode in xmlNodes)
+            {
+                count++;
+                Console.WriteLine("Toevoegen aan database naam = " + XmlNode["Name"].InnerText + " category nummer " + count);
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
+
+                con.Open();
+                //Table veranderen naar products hieronder!!
+                var sql = "INSERT INTO SubSubCategories(Title) Values(@Name)";
+                using (var cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Name", XmlNode["Name"].InnerText);
+
+                    cmd.ExecuteNonQuery();
+                }
                 //using (var connection = new SqlConnection(@"");
             }
             Console.WriteLine("Categorieen toegevoegd " + count);
@@ -89,14 +159,32 @@ namespace ApiDataUpdater
             string xmlContent = doc.InnerXml;
 
             XmlElement xmlRoot = doc.DocumentElement;
-            XmlNodeList xmlNodes = xmlRoot.SelectNodes("/Promotions/Promotion/Discount");
+            XmlNodeList xmlNodes = xmlRoot.SelectNodes("/Promotions/Promotion");
             count = 0;
             foreach (XmlNode XmlNode in xmlNodes)
             {
                 count++;
-                Console.WriteLine("Toevoegen aan database promotie = " + XmlNode["EAN"].InnerText + " promotie nummer " + count);
+                Console.WriteLine("Toevoegen aan database promotie = " + XmlNode["Title"].InnerText + " promotie nummer " + count);
 
-                //using (var connection = new SqlConnection(@"");
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
+
+                con.Open();
+                var sql = "INSERT INTO Discount(title, EAN, price, validUntil) Values(@Name, @EAN, @price, @validUntil)";
+                using (var cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Name", XmlNode["Title"].InnerText);
+
+                    XmlNodeList addrNodes = XmlNode.SelectNodes("/Discount");
+                    foreach (XmlNode addrn in addrNodes)
+                    {
+
+
+                        cmd.Parameters.AddWithValue("@EAN", XmlNode["EAN"].InnerText);
+                        cmd.Parameters.AddWithValue("@price", XmlNode["DiscountPrice"].InnerText);
+                        cmd.Parameters.AddWithValue("@validUntil", XmlNode["ValidUntil"].InnerText);
+                    }
+                    cmd.ExecuteNonQuery();
+                }
             }
             Console.WriteLine("promoties toegevoegd " + count);
         }
