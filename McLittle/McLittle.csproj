@@ -396,10 +396,6 @@
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_variables.scss" />
-<<<<<<< HEAD
-=======
-
->>>>>>> 4cfca8d1f48788b82c644bdb63e4c108cd5fb540
     <Content Include="Areas\CMS\Views\CMS\Index.cshtml" />
     <Content Include="Areas\CMS\Views\Blogs\Create.cshtml" />
     <Content Include="Areas\CMS\Views\Blogs\Delete.cshtml" />
@@ -409,10 +405,6 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
-<<<<<<< HEAD
-=======
-
->>>>>>> 4cfca8d1f48788b82c644bdb63e4c108cd5fb540
     <Content Include="Areas\CMS\Views\CMS\index.cshtml" />
     <Content Include="Areas\CMS\Views\CMS\tables.cshtml" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -444,10 +436,6 @@
     <Content Include="Scripts\jquery-3.0.0.slim.min.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
-<<<<<<< HEAD
-=======
-
->>>>>>> 4cfca8d1f48788b82c644bdb63e4c108cd5fb540
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -518,15 +506,10 @@
     <Content Include="Views\SubSubCategories\Details.cshtml" />
     <Content Include="Views\SubSubCategories\Edit.cshtml" />
     <Content Include="Views\SubSubCategories\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Blogs\Details.cshtml" />
     <Content Include="Views\Blogs\Index.cshtml" />
-=======
-
     <Content Include="Views\Blogs\Details.cshtml" />
     <Content Include="Views\Blogs\Index.cshtml" />
-
->>>>>>> 4cfca8d1f48788b82c644bdb63e4c108cd5fb540
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -536,10 +519,6 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-<<<<<<< HEAD
-=======
-
->>>>>>> 4cfca8d1f48788b82c644bdb63e4c108cd5fb540
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
