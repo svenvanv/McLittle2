@@ -340,6 +340,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\beef-cooking-delicious-769289.jpg" />
     <Content Include="Content\Images\cadeaumand-wereldreis-met-bier-verschillende-bieren-cadeautjes-nl_6161-70c99e91.jpg" />
+    <Content Include="Content\Images\price-tag.png" />
     <Content Include="Content\modern-business.css" />
     <Content Include="Content\Ts_Style.css" />
     <Content Include="favicon.ico" />

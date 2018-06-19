@@ -87,7 +87,7 @@
 }
 
 .Ts_overlay {
-    text-align: center;
+    text-align: left;
     padding: 45px 30px;
     background-color: rgba(0,0,0,0.7);
     min-height: 200px;
