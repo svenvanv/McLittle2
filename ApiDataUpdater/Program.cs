@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using McLittle.Models;
 
 namespace ApiDataUpdater
 {
@@ -15,11 +16,11 @@ namespace ApiDataUpdater
         static void Main(string[] args)
         {
             //updateProduct();
-            //updateCategory();
-            //updateSubCategory();
-            //updateSubSubCategory();
-            updatePromotions();
-            updateDelivery();
+            updateCategory();
+            updateSubCategory();
+            updateSubSubCategory();
+            //updatePromotions();
+            //updateDelivery();
 
             Console.ReadLine();
         }
@@ -39,7 +40,7 @@ namespace ApiDataUpdater
                 count++;
                 Console.WriteLine("Toevoegen aan database EAN = " + XmlNode["EAN"].InnerText + " product nummer " + count);
 
-                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename='D:\Program Files\mcitte\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf';Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
 
                 con.Open();
                 //Table veranderen naar products hieronder!!
@@ -79,7 +80,7 @@ namespace ApiDataUpdater
             {
                 count++;
                 Console.WriteLine("Toevoegen aan database naam = " + XmlNode["Name"].InnerText + " category nummer " + count);
-                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename='D:\Program Files\mcitte\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf';Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
 
                 con.Open();
                 //Table veranderen naar products hieronder!!
@@ -108,14 +109,15 @@ namespace ApiDataUpdater
             {
                 count++;
                 Console.WriteLine("Toevoegen aan database naam = " + XmlNode["Name"].InnerText + " category nummer " + count);
-                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
-
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename='D:\Program Files\mcitte\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf';Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
+                Category Id = new Category();
                 con.Open();
                 //Table veranderen naar products hieronder!!
-                var sql = "INSERT INTO SubCategories(Title) Values(@Name)";
+                var sql = "INSERT INTO SubCategories(Title, CategoryId) Values(@Name, @Id)";
                 using (var cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@Name", XmlNode["Name"].InnerText);
+                    cmd.Parameters.AddWithValue("@Id", Id.CategoryId);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -137,14 +139,15 @@ namespace ApiDataUpdater
             {
                 count++;
                 Console.WriteLine("Toevoegen aan database naam = " + XmlNode["Name"].InnerText + " category nummer " + count);
-                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
-
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename='D:\Program Files\mcitte\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf';Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
+                SubCategory id = new SubCategory();
                 con.Open();
                 //Table veranderen naar products hieronder!!
-                var sql = "INSERT INTO SubSubCategories(Title) Values(@Name)";
+                var sql = "INSERT INTO SubSubCategories(Title, SubCategoryId) Values(@Name, @Id)";
                 using (var cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@Name", XmlNode["Name"].InnerText);
+                    cmd.Parameters.AddWithValue("@Id", id.CategoryId);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -166,7 +169,7 @@ namespace ApiDataUpdater
                 count++;
                 Console.WriteLine("Toevoegen aan database promotie = " + XmlNode["Title"].InnerText + " promotie nummer " + count);
 
-                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf;Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
+                var con = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename='D:\Program Files\mcitte\McLittle2\McLittle\App_Data\aspnet-McLittle-20180516011236.mdf';Initial Catalog=aspnet-McLittle-20180516011236;Integrated Security=True");
 
                 con.Open();
                 var sql = "INSERT INTO Discount(title, EAN, price, validUntil) Values(@Name, @EAN, @price, @validUntil)";

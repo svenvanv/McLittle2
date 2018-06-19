@@ -192,10 +192,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
-    <Compile Include="Areas\CMS\Controllers\BlogsController.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\BlogsController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -220,6 +218,10 @@
     <Compile Include="Migrations\201806150927423_Tyas.cs" />
     <Compile Include="Migrations\201806150927423_Tyas.Designer.cs">
       <DependentUpon>201806150927423_Tyas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806180838437_categoriess.cs" />
+    <Compile Include="Migrations\201806180838437_categoriess.Designer.cs">
+      <DependentUpon>201806180838437_categoriess.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -397,11 +399,6 @@
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_variables.scss" />
     <Content Include="Areas\CMS\Views\CMS\Index.cshtml" />
-    <Content Include="Areas\CMS\Views\Blogs\Create.cshtml" />
-    <Content Include="Areas\CMS\Views\Blogs\Delete.cshtml" />
-    <Content Include="Areas\CMS\Views\Blogs\Details.cshtml" />
-    <Content Include="Areas\CMS\Views\Blogs\Edit.cshtml" />
-    <Content Include="Areas\CMS\Views\Blogs\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -506,10 +503,6 @@
     <Content Include="Views\SubSubCategories\Details.cshtml" />
     <Content Include="Views\SubSubCategories\Edit.cshtml" />
     <Content Include="Views\SubSubCategories\Index.cshtml" />
-    <Content Include="Views\Blogs\Details.cshtml" />
-    <Content Include="Views\Blogs\Index.cshtml" />
-    <Content Include="Views\Blogs\Details.cshtml" />
-    <Content Include="Views\Blogs\Index.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -541,6 +534,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806150927423_Tyas.resx">
       <DependentUpon>201806150927423_Tyas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806180838437_categoriess.resx">
+      <DependentUpon>201806180838437_categoriess.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
