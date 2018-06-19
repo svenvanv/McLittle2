@@ -12,6 +12,13 @@ namespace ApiUpdater
         static string baseUri = "https://supermaco.starwave.nl/api/";
         static void Main(string[] args)
         {
+
+            Category();
+
+
+        }
+        static void Category()
+        {
             Entities e = new Entities();
 
             XmlDocument doc = new XmlDocument();
@@ -24,9 +31,9 @@ namespace ApiUpdater
                 c.Title = category.SelectSingleNode("Name").InnerXml;
                 foreach (XmlNode subcategory in category.ChildNodes)
                 {
-                    if(subcategory.Name != "Name")
+                    if (subcategory.Name != "Name")
                     {
-                        
+
                         SubCategory s = new SubCategory();
                         s.Title = subcategory.SelectSingleNode("Name").InnerXml;
 
@@ -47,5 +54,18 @@ namespace ApiUpdater
                 }
             }
         }
+        static void Product()
+        {
+            Entities e = new Entities();
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load(baseUri + "products");
+
+            XmlNode node = doc.SelectSingleNode("products");
+            foreach (XmlNode category in node.ChildNodes)
+            {
+
+            }
+            }
     }
 }
