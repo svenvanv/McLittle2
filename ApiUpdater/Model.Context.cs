@@ -35,5 +35,6 @@ namespace ApiUpdater
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<SubCategory> SubCategories { get; set; }
         public virtual DbSet<SubSubCategory> SubSubCategories { get; set; }
+        public virtual DbSet<Discount> Discounts { get; set; }
     }
 }

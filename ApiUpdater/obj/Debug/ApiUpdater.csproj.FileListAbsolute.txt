@@ -1,0 +1,11 @@
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\bin\Debug\ApiUpdater.exe.config
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\bin\Debug\ApiUpdater.exe
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\bin\Debug\ApiUpdater.pdb
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\bin\Debug\EntityFramework.dll
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\bin\Debug\EntityFramework.xml
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.csprojResolveAssemblyReference.cache
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.csproj.CoreCompileInputs.cache
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.exe
+C:\Users\Sven\Documents\GitHub\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.pdb

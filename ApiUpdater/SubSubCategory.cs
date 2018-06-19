@@ -16,5 +16,8 @@ namespace ApiUpdater
     {
         public int SubSubCategoryId { get; set; }
         public string Title { get; set; }
+        public int SubCategoryId { get; set; }
+    
+        public virtual SubCategory SubCategory { get; set; }
     }
 }
