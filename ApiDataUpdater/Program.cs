@@ -18,8 +18,8 @@ namespace ApiDataUpdater
             //updateCategory();
             //updateSubCategory();
             //updateSubSubCategory();
-            updatePromotions();
-            updateDelivery();
+           //updatePromotions();
+            //updateDelivery();
 
             Console.ReadLine();
         }
