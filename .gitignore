@@ -6,3 +6,5 @@
 .vs/McLittle/v15/.suo
 *.cache
 *.cache
+*.mdf
+*.mdf
