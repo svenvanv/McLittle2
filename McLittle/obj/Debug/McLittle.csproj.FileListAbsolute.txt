@@ -149,3 +149,4 @@ C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.Copy
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.dll
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.pdb
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas.resources
+C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csprojResolveAssemblyReference.cache
