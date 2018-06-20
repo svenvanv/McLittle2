@@ -89,7 +89,8 @@
 .Ts_overlay {
     text-align: left;
     padding: 45px 30px;
-    background-color: rgba(0,0,0,0.7);
+    padding-top: 55px;
+    background-color: rgba(0,0,0,0.8);
     min-height: 200px;
     height: 100%;
     width: 100%;
@@ -108,4 +109,35 @@
 }
 .Ts_portfolio_item{
     margin-bottom:60px;
+}
+.Ts_price_main span {
+    position: absolute;
+    z-index: 2;
+    top: 17px;
+    right: 27px;
+    transform: rotate(-35deg);
+    font-size: 16px;
+    font-weight: 600;
+}
+.Ts_price_main i {
+    font-size: 84px;
+    position: absolute;
+    z-index: 2;
+    top: -15px;
+    right: 12px;
+    transform: rotate(100deg);
+    color: red;
+}
+.Ts_aanbiedingen_card .h-100 {
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15) !important;
+}
+.Ts_aanbiedingen_card .h-100:hover {
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35) !important;
+}
+.Ts_product_main h6 {
+    font-weight: 650;
+    color: #3a85fa;
+}
+.Ts_product_main h3:hover {
+    color: #FAAF3A !important;
 }
