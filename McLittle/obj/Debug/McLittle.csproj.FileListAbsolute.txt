@@ -148,6 +148,6 @@ C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.Core
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.CopyComplete
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.dll
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.pdb
-C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas.resources
-C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csprojResolveAssemblyReference.cache
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
+C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas20.resources
+C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csprojResolveAssemblyReference.cache
