@@ -7,4 +7,6 @@
 *.cache
 *.cache
 *.mdf
+*.ldf
 *.mdf
+*.ldf

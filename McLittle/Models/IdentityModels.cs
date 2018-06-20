@@ -33,7 +33,6 @@ namespace McLittle.Models
         public DbSet<Category> category { get; set; }
         public DbSet<SubCategory> subcategory { get; set; }
         public DbSet<SubSubCategory> subsubCategory { get; set; }
-        public System.Data.Entity.DbSet<McLittle.Models.Blog> Blogs { get; set; }
         public DbSet<Discount> discount { get; set; }
     }
 }
