@@ -215,13 +215,13 @@
     <Compile Include="Migrations\201806051118396_roles.Designer.cs">
       <DependentUpon>201806051118396_roles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806150927423_Tyas.cs" />
-    <Compile Include="Migrations\201806150927423_Tyas.Designer.cs">
-      <DependentUpon>201806150927423_Tyas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201806180838437_categoriess.cs" />
     <Compile Include="Migrations\201806180838437_categoriess.Designer.cs">
       <DependentUpon>201806180838437_categoriess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806201108270_Tyas2.0.cs" />
+    <Compile Include="Migrations\201806201108270_Tyas2.0.Designer.cs">
+      <DependentUpon>201806201108270_Tyas2.0.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201806200940096_categories.cs" />
     <Compile Include="Migrations\201806200940096_categories.Designer.cs">
@@ -343,7 +343,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\beef-cooking-delicious-769289.jpg" />
-    <Content Include="Content\Images\blank-price-tag-png-4.png" />
     <Content Include="Content\Images\cadeaumand-wereldreis-met-bier-verschillende-bieren-cadeautjes-nl_6161-70c99e91.jpg" />
     <Content Include="Content\modern-business.css" />
     <Content Include="Content\Ts_Style.css" />
@@ -539,11 +538,11 @@
     <EmbeddedResource Include="Migrations\201806051118396_roles.resx">
       <DependentUpon>201806051118396_roles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806150927423_Tyas.resx">
-      <DependentUpon>201806150927423_Tyas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806180838437_categoriess.resx">
       <DependentUpon>201806180838437_categoriess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806201108270_Tyas2.0.resx">
+      <DependentUpon>201806201108270_Tyas2.0.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806200940096_categories.resx">
       <DependentUpon>201806200940096_categories.cs</DependentUpon>

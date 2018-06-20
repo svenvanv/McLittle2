@@ -148,8 +148,11 @@ C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.Core
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.CopyComplete
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.dll
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.pdb
-C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas.resources
-C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csprojResolveAssemblyReference.cache
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
+<<<<<<< HEAD
+C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas20.resources
+C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csprojResolveAssemblyReference.cache
+=======
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas.resources
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
+>>>>>>> 5f3c6c3bc9d8aa76947edb67c2233fc890ce1852

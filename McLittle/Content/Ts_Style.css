@@ -14,7 +14,7 @@
 }
 
 .bg-dark {
-    background-color: rgba(0,0,0, 0.6) !important;
+    background-color: rgba(0,0,0, 0.9) !important;
     color: #fff;
 }
 
@@ -37,7 +37,7 @@
     }
 
 .nav-link a {
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 1) !important;
 }
 
     .nav-link a:hover {
@@ -66,16 +66,17 @@
     padding-left: 10px;
 }
 
-.Ts_add_to_cart_btn {
+.Ts_add_to_cart_btn, .Ts_add_to_cart_btn_main a {
     background-color: #3a85fa;
     padding: 15px;
     width: 100%;
     border: 0px solid #fff;
     text-align: center;
     color: #fff;
+    text-decoration:none;
 }
 
-    .Ts_add_to_cart_btn:hover {
+.Ts_add_to_cart_btn:hover, .Ts_add_to_cart_btn_main a:hover {
    background-color: #3a65fa;
    text-decoration: none;
    color: #ffffff;
@@ -91,7 +92,7 @@
     padding: 45px 30px;
     padding-top: 55px;
     background-color: rgba(0,0,0,0.8);
-    min-height: 200px;
+    min-height: 300px;
     height: 100%;
     width: 100%;
     color: #fff;
@@ -107,24 +108,49 @@
     -moz-transition: opacity 500ms ease-in-out;
     -webkit-transition: opacity 500ms ease-in-out;
 }
-.Ts_portfolio_item{
-    margin-bottom:60px;
+.Ts_portfolio_item {
+    margin-bottom: 60px;
+    margin-top:30px;
 }
-.Ts_price_main span {
+.portfolio-item {
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.btn2 {
     position: absolute;
-    z-index: 2;
-    top: 17px;
-    right: 27px;
-    transform: rotate(-35deg);
-    font-size: 16px;
-    font-weight: 600;
+    bottom: 0;
+    left: 0%;
+    right: 50%;
+    width:50%
 }
-.Ts_price_main i {
+.btn3 a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 0%;
+    width: 50% ;
+    background-color:#FAAF3A;
+}
+.btn3 a:hover {
+    background-color: #d59334;
+}
+.Ts_price_main {
+    position: absolute;
+    top: -16px;
+    right: 0px;
+}
+    .Ts_price_main span {
+        transform: rotate(-35deg);
+        font-size: 16px;
+        font-weight: 600;
+        position: absolute;
+        top: 32px;
+        right: 15px;
+    }
+.Ts_price_tag {
     font-size: 84px;
-    position: absolute;
-    z-index: 2;
-    top: -15px;
-    right: 12px;
     transform: rotate(100deg);
     color: red;
 }
@@ -141,3 +167,80 @@
 .Ts_product_main h3:hover {
     color: #FAAF3A !important;
 }
+    .row.gray {
+        background-color: #D3D3D3;
+        width: 160%;
+        margin-left: -30%;
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+
+
+
+/*Make Price tag swing*/
+.Ts_product_main:hover .Ts_price_main {
+    animation: swing linear 1.5s;
+    animation-iteration-count: 2;
+    transform-origin: 100% 0%;
+    animation-fill-mode: forwards; /*when the spec is finished*/
+    -webkit-animation: swing linear 2.5s;
+    -webkit-animation-iteration-count: 2;
+    -webkit-transform-origin: 100% 0%;
+    -webkit-animation-fill-mode: forwards; /*Chrome 16+, Safari 4+*/
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(6deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(6deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(-10deg);
+    }
+
+    60% {
+        -webkit-transform: rotate(5deg);
+    }
+
+    80% {
+        -webkit-transform: rotate(-5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
