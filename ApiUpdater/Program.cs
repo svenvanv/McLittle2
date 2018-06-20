@@ -48,7 +48,6 @@ namespace ApiUpdater
                             sc.Title = subcategory.SelectSingleNode("Name").InnerXml;
                             sc.Category = c;
                             sc.CategoryId = sc.Category.CategoryId;
-
                             e.SubCategories.Add(sc);
                             e.SaveChanges();
                         }
