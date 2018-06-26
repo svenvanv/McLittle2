@@ -1,0 +1,34 @@
+﻿@model IEnumerable<McLittle.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Bekijk hier onze mooie producten</h2>
+    <!-- Portfolio Section -->
+<div class="Ts_portfolio_item">
+    <div class="row">
+        @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="Ts_product_main" style="background-image: url('../../Content/Images/cadeaumand-wereldreis-met-bier-verschillende-bieren-cadeautjes-nl_6161-70c99e91.jpg');">
+                <div class="Ts_overlay">
+                    <div class="Ts_price_main">
+                        <i class="fa fa-tag Ts_price_tag"></i>
+                        <span>$@Html.DisplayFor(modelItem => item.price)</span>
+                    </div>
+                    <h3>@Html.DisplayFor(modelItem => item.title)</h3>
+                    <h6>@Html.DisplayFor(modelItem => item.brand)</h6>
+                    <p>@Html.DisplayFor(modelItem => item.shortDesc)</p>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.productId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.productId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.productId })
+                    <div class="Ts_add_to_cart_btn_main btn3">@Html.ActionLink("Bekijk het product", "Details", new { id = item.productId })</div>
+                    <a class="Ts_add_to_cart_btn btn2" href="#">IN WINKELWAGEN</a>
+                </div>
+            </div>
+        </div>
+}
+    </div>
+    </div>
+<!-- /.row -->

@@ -193,6 +193,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSController.cs" />
+    <Compile Include="Areas\CMS\Controllers\CMSProductsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -222,10 +223,6 @@
     <Compile Include="Migrations\201806201108270_Tyas2.0.cs" />
     <Compile Include="Migrations\201806201108270_Tyas2.0.Designer.cs">
       <DependentUpon>201806201108270_Tyas2.0.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806200940096_categories.cs" />
-    <Compile Include="Migrations\201806200940096_categories.Designer.cs">
-      <DependentUpon>201806200940096_categories.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -405,6 +402,11 @@
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_variables.scss" />
     <Content Include="Areas\CMS\Views\CMS\Index.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSProducts\Index.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSProducts\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSProducts\Details.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSProducts\Delete.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSProducts\Create.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -494,10 +496,7 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
-    <Content Include="Views\Products\Create.cshtml" />
-    <Content Include="Views\Products\Delete.cshtml" />
     <Content Include="Views\Products\Details.cshtml" />
-    <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
     <Content Include="Views\SubCategories\Create.cshtml" />
     <Content Include="Views\SubCategories\Delete.cshtml" />
@@ -543,9 +542,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806201108270_Tyas2.0.resx">
       <DependentUpon>201806201108270_Tyas2.0.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806200940096_categories.resx">
-      <DependentUpon>201806200940096_categories.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

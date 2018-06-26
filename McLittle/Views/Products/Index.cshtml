@@ -20,9 +20,6 @@
                     <h3>@Html.DisplayFor(modelItem => item.title)</h3>
                     <h6>@Html.DisplayFor(modelItem => item.brand)</h6>
                     <p>@Html.DisplayFor(modelItem => item.shortDesc)</p>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.productId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.productId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.productId })
                     <div class="Ts_add_to_cart_btn_main btn3">@Html.ActionLink("Bekijk het product", "Details", new { id = item.productId })</div>
                     <a class="Ts_add_to_cart_btn btn2" href="#">IN WINKELWAGEN</a>
                 </div>
