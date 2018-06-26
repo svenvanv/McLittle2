@@ -15,10 +15,8 @@ namespace ApiDataUpdater
         static int count;
         static void Main(string[] args)
         {
-            //updateProduct();
-            updateCategory();
-            updateSubCategory();
-            updateSubSubCategory();
+            updateProduct();
+           
             //updatePromotions();
             //updateDelivery();
 

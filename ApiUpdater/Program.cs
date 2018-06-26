@@ -13,7 +13,6 @@ namespace ApiUpdater
         static void Main(string[] args)
         {
             Category();
-            Category();
             // Product();               
         }
         static void Category()

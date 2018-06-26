@@ -11,11 +11,11 @@
         @foreach (var item in Model)
     {
         <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="Ts_product_main" style="background-image: url('../../Content/Images/cadeaumand-wereldreis-met-bier-verschillende-bieren-cadeautjes-nl_6161-70c99e91.jpg');">
+            <div class="Ts_product_main" style="background-image: url('@Html.DisplayFor(modelItem => item.imageLink)');">
                 <div class="Ts_overlay">
                     <div class="Ts_price_main">
                         <i class="fa fa-tag Ts_price_tag"></i>
-                        <span>$@Html.DisplayFor(modelItem => item.price)</span>
+                        <span>€@Html.DisplayFor(modelItem => item.price)</span>
                     </div>
                     <h3>@Html.DisplayFor(modelItem => item.title)</h3>
                     <h6>@Html.DisplayFor(modelItem => item.brand)</h6>

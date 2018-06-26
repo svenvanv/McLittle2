@@ -21,3 +21,15 @@ C:\Users\Tyas\Documents\GitHub\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.csproj.
 C:\Users\Tyas\Documents\GitHub\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.csproj.CopyComplete
 C:\Users\Tyas\Documents\GitHub\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.exe
 C:\Users\Tyas\Documents\GitHub\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.pdb
+D:\Program Files\mcitte\McLittle2\ApiUpdater\bin\Debug\ApiUpdater.exe.config
+D:\Program Files\mcitte\McLittle2\ApiUpdater\bin\Debug\ApiUpdater.exe
+D:\Program Files\mcitte\McLittle2\ApiUpdater\bin\Debug\ApiUpdater.pdb
+D:\Program Files\mcitte\McLittle2\ApiUpdater\bin\Debug\EntityFramework.dll
+D:\Program Files\mcitte\McLittle2\ApiUpdater\bin\Debug\EntityFramework.SqlServer.dll
+D:\Program Files\mcitte\McLittle2\ApiUpdater\bin\Debug\EntityFramework.xml
+D:\Program Files\mcitte\McLittle2\ApiUpdater\bin\Debug\EntityFramework.SqlServer.xml
+D:\Program Files\mcitte\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.csprojResolveAssemblyReference.cache
+D:\Program Files\mcitte\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.csproj.CoreCompileInputs.cache
+D:\Program Files\mcitte\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.csproj.CopyComplete
+D:\Program Files\mcitte\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.exe
+D:\Program Files\mcitte\McLittle2\ApiUpdater\obj\Debug\ApiUpdater.pdb
