@@ -1,4 +1,12 @@
-﻿.Ts_header {
+﻿body{
+    padding-bottom: 0px;
+}
+.Ts_footer {
+    width: 200%;
+    margin-left: -50%;
+    bottom: 0;
+}
+.Ts_header {
     margin-top: -60px;
     text-align: center;
     background-image: url('Images/beef-cooking-delicious-769289.jpg');
