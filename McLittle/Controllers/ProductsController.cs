@@ -17,7 +17,15 @@ namespace McLittle.Controllers
         // GET: Products
         public ActionResult Index()
         {
+            
+        
             return View(db.product.ToList());
+        }
+
+        public ActionResult GetProductsGrid()
+        {
+            var Products = db.product.Take(3);
+            return PartialView("_ProductsGrid", Products);
         }
 
         // GET: Products/Details/5

@@ -457,7 +457,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -517,10 +519,14 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+<<<<<<< HEAD
     <Content Include="Views\Categories\subcat.cshtml" />
     <Content Include="Views\Categories\SubSubcat.cshtml" />
     <Content Include="Views\Categories\_Products.cshtml" />
     <Content Include="Views\Categories\Product.cshtml" />
+=======
+    <Content Include="Views\Products\_ProductsGrid.cshtml" />
+>>>>>>> b019ecb020f9e84146a4882a622e84b5f6d3d8bf
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
