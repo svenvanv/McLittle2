@@ -149,10 +149,85 @@ C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.Copy
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.dll
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.pdb
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
-<<<<<<< HEAD
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas20.resources
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csprojResolveAssemblyReference.cache
-=======
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas.resources
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
->>>>>>> 5f3c6c3bc9d8aa76947edb67c2233fc890ce1852
+D:\Program Files\mcitte\McLittle2\McLittle\bin\ApplicationInsights.config
+D:\Program Files\mcitte\McLittle2\McLittle\bin\McLittle.dll.config
+D:\Program Files\mcitte\McLittle2\McLittle\bin\McLittle.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\McLittle.pdb
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Antlr3.Runtime.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\EntityFramework.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\EntityFramework.SqlServer.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.DependencyCollector.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.Web.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.WindowsServer.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.ApplicationInsights.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.Google.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Web.Infrastructure.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Newtonsoft.Json.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Owin.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.Helpers.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.Mvc.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.Optimization.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.Razor.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.WebPages.Deployment.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.WebPages.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.WebPages.Razor.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\WebGrease.dll
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.Helpers.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.Mvc.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.Optimization.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.Razor.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.WebPages.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.WebPages.Deployment.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\System.Web.WebPages.Razor.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Antlr3.Runtime.pdb
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Newtonsoft.Json.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\EntityFramework.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\EntityFramework.SqlServer.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.Google.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.ApplicationInsights.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.DependencyCollector.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.WindowsServer.xml
+D:\Program Files\mcitte\McLittle2\McLittle\bin\Microsoft.AI.Web.xml
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csprojResolveAssemblyReference.cache
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.Migrations.loginsystem.resources
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.Migrations.projectbasis.resources
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.Migrations.roles.resources
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas20.resources
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csproj.GenerateResource.cache
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csproj.CoreCompileInputs.cache
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csproj.CopyComplete
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.dll
+D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.pdb

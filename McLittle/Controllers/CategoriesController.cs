@@ -21,18 +21,23 @@ namespace McLittle.Controllers
         }
 
         // GET: Categories/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Subcategory(int? id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Category category = db.category.Find(id);
-            if (category == null)
-            {
-                return HttpNotFound();
-            }
-            return View(category);
+            var Subcategory = db.subcategory.Where(t => id == t.CategoryId); 
+            return View("subcat", Subcategory);
+        }
+
+        public ActionResult SubSubcategory(int? id)
+        {
+            var SubSubcategory = db.subsubCategory.Where(t => id == t.SubCategoryId);
+            return View("SubSubcat", SubSubcategory);
+        }
+
+        public ActionResult Products(int? id)
+        {
+            var titleCat = db.subsubCategory.Where(t => id == t.SubSubCategoryId).Select(t => t.Title);
+            var Products = db.product.Where(t => titleCat.Contains(t.subsubCategory));
+            return View("Product", Products);
         }
 
         // GET: Categories/Create

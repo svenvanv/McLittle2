@@ -517,6 +517,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Categories\subcat.cshtml" />
+    <Content Include="Views\Categories\SubSubcat.cshtml" />
+    <Content Include="Views\Categories\_Products.cshtml" />
+    <Content Include="Views\Categories\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
