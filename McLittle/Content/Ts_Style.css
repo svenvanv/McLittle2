@@ -217,7 +217,7 @@
 .Ts_product_main h3:hover {
     color: #FAAF3A !important;
 }
-<<<<<<< HEAD
+
     .row.gray {
         background-color: #D3D3D3;
         width: 160%;
@@ -241,7 +241,7 @@
 .preview-pic img{
     max-width:100%;
 }
->>>>>>> f30f98f09b2b180740550902a9a7822911fb95cc
+
 
 
 
@@ -309,4 +309,3 @@
         -webkit-transform: rotate(0deg);
     }
 }
-
