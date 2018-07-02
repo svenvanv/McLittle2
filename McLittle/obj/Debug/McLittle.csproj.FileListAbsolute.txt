@@ -233,6 +233,5 @@ D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csproj.CopyComplet
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.dll
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.pdb
 =======
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas20.resources
 >>>>>>> b019ecb020f9e84146a4882a622e84b5f6d3d8bf

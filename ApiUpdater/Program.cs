@@ -13,7 +13,8 @@ namespace ApiUpdater
         static void Main(string[] args)
         {
             Category();
-            // Product();               
+            Product();
+            //Promotions();
         }
         static void Category()
         {
@@ -76,57 +77,92 @@ namespace ApiUpdater
         }
 
 
-             static void Product()
+        static void Product()
         {
             Entities e = new Entities();
 
             XmlDocument doc = new XmlDocument();
             doc.Load(baseUri + "products");
 
-            XmlNode node = doc.SelectSingleNode("products");
-
+            XmlNode node = doc.SelectSingleNode("Products");
+            foreach (XmlNode prod in node.ChildNodes)
+            {
+                
+                if (prod.Name != "Title")
+                {
+                    string cName = prod.SelectSingleNode("Title").InnerXml;
+                    Product p = e.Products.FirstOrDefault(sven => sven.title == cName);
+                    if (p == null)
+                    {
+                        p = new Product();
+                        p.EAN = Convert.ToInt64(prod.SelectSingleNode("EAN").InnerXml);
+                        p.title = prod.SelectSingleNode("Title").InnerXml;
+                        p.brand = prod.SelectSingleNode("Brand").InnerXml;
+                        p.shortDesc = prod.SelectSingleNode("Shortdescription").InnerXml;
+                        p.fullDesc = prod.SelectSingleNode("Fulldescription").InnerXml;
+                        p.imageLink = prod.SelectSingleNode("Image").InnerXml;
+                        p.weight = prod.SelectSingleNode("Weight").InnerXml;
+                        p.price = Convert.ToSingle(prod.SelectSingleNode("Price").InnerXml);
+                        p.category = prod.SelectSingleNode("Category").InnerXml;
+                        p.subCategory = prod.SelectSingleNode("Subcategory").InnerXml;
+                        p.subsubCategory = prod.SelectSingleNode("Subsubcategory").InnerXml;
+                        e.Products.Add(p);
+                        e.SaveChanges();
+                    }
+                }
+            }
         }
+        static void Promotions()
+        {
+            Entities e = new Entities();
 
+            XmlDocument doc = new XmlDocument();
+            doc.Load(baseUri + "promotions");
 
+            XmlNode node = doc.SelectSingleNode("Promotions");
+            foreach (XmlNode prod in node.ChildNodes)
+            {
 
-        //static void Product()
+                if (prod.Name != "Title")
+                {
+                    string cName = prod.SelectSingleNode("Title").InnerXml;
+                    Discount p = e.Discounts.FirstOrDefault(sven => sven.title == cName);
+                    if (p == null)
+                    {
+                        p = new Discount();
+                        p.EAN = Convert.ToInt64(prod.SelectSingleNode("EAN").InnerXml);
+                        p.title = prod.SelectSingleNode("Title").InnerXml;
+                        p.price = Convert.ToSingle(prod.SelectSingleNode("DiscountPrice").InnerXml);
+                        p.validUntil = Convert.ToDateTime(prod.SelectSingleNode("ValidUntil").InnerXml);
+                        e.Discounts.Add(p);
+                        e.SaveChanges();
+                    }
+                }
+            }
+        }
+        //static void Delivery()
         //{
         //    Entities e = new Entities();
 
         //    XmlDocument doc = new XmlDocument();
-        //    doc.Load(baseUri + "products");
+        //    doc.Load(baseUri + "deliveryslots");
 
-        //    XmlNode node = doc.SelectSingleNode("products");
-
-        //    //foreach (XmlNode category in node.ChildNodes)
-        //    //{
-
-        //    //}
-
-
-        //    foreach (XmlNode products in node.ChildNodes)
+        //    XmlNode node = doc.SelectSingleNode("Deliveryslots");
+        //    foreach (XmlNode prod in node.ChildNodes)
         //    {
-        //        foreach (XmlNode product in products.ChildNodes)
+
+        //        if (prod.Name != "Title")
         //        {
-
-        //        Product p = new Product();
-        //            p.EAN = Convert.ToInt64(product.SelectSingleNode("EAN").InnerXml);
-        //            p.title = product.SelectSingleNode("Title").InnerXml;
-        //            p.brand = product.SelectSingleNode("Brand").InnerXml;
-        //            p.shortDesc = product.SelectSingleNode("Shortdescription").InnerXml;
-        //            p.fullDesc = product.SelectSingleNode("Fulldescription").InnerXml;
-        //            p.imageLink = product.SelectSingleNode("Imageink").InnerXml;
-        //            p.weight = product.SelectSingleNode("Weight").InnerXml;
-        //            p.price = Convert.ToSingle(product.SelectSingleNode("Price").InnerXml);
-        //            p.category = product.SelectSingleNode("Category").InnerXml;
-        //            p.subCategory = product.SelectSingleNode("Subcategory").InnerXml;
-        //            p.subsubCategory = product.SelectSingleNode("Subsubcategory").InnerXml;
-
-        //            long EAN = Convert.ToUInt32(product.SelectSingleNode("EAN").InnerXml);
-        //            Product ssc = e.Products.FirstOrDefault(jap => jap.EAN == EAN);
-        //            if (ssc == null)
+        //            string cName = prod.SelectSingleNode("Date").InnerXml;
+        //            Delivery p = e.de.FirstOrDefault(sven => sven. == cName);
+        //            if (p == null)
         //            {
-        //                e.Products.Add(ssc);
+        //                p = new Discount();
+        //                p.EAN = Convert.ToInt64(prod.SelectSingleNode("EAN").InnerXml);
+        //                p.title = prod.SelectSingleNode("Title").InnerXml;
+        //                p.price = Convert.ToSingle(prod.SelectSingleNode("DiscountPrice").InnerXml);
+        //                p.validUntil = Convert.ToDateTime(prod.SelectSingleNode("ValidUntil").InnerXml);
+        //                e.Discounts.Add(p);
         //                e.SaveChanges();
         //            }
         //        }
