@@ -1,0 +1,118 @@
+﻿@model IEnumerable<McLittle.Models.Product>
+
+
+<div class="Ts_portfolio_item">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="Ts_product_main" style="background-image: url('@Html.DisplayFor(modelItem => item.imageLink)');">
+                    <div class="Ts_overlay2">
+                        <div class="Ts_price_main">
+                            <i class="fa fa-tag Ts_price_tag"></i>
+                            <span>€@Html.DisplayFor(modelItem => item.price)</span>
+                        </div>
+                        <h3>@Html.DisplayFor(modelItem => item.title)</h3>
+                    </div>
+                    <div class="Ts_overlay">
+                        <div class="Ts_price_main">
+                            <i class="fa fa-tag Ts_price_tag"></i>
+                            <span>€@Html.DisplayFor(modelItem => item.price)</span>
+                        </div>
+                        <h3>@Html.DisplayFor(modelItem => item.title)</h3>
+                        <h6>@Html.DisplayFor(modelItem => item.brand)</h6>
+                        <p>@Html.DisplayFor(modelItem => item.shortDesc)</p>
+                        <div class="Ts_add_to_cart_btn_main btn3">@Html.ActionLink("Bekijk het product", "Details", new { id = item.productId })</div>
+                        <a class="Ts_add_to_cart_btn btn2" href="#">IN WINKELWAGEN</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<!-- /.row -->
+@*@model IEnumerable<McLittle.Models.Product>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.EAN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.shortDesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fullDesc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.imageLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.subCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.subsubCategory)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EAN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.shortDesc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fullDesc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.imageLink)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.weight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.subCategory)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.subsubCategory)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.productId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.productId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.productId })
+                </td>
+            </tr>
+        }
+
+    </table>*@
