@@ -199,38 +199,29 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\SubCategoriesController.cs" />
     <Compile Include="Controllers\SubSubCategoriesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201806051052410_loginsystem.cs" />
-    <Compile Include="Migrations\201806051052410_loginsystem.Designer.cs">
-      <DependentUpon>201806051052410_loginsystem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806051117413_projectbasis.cs" />
-    <Compile Include="Migrations\201806051117413_projectbasis.Designer.cs">
-      <DependentUpon>201806051117413_projectbasis.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806051118396_roles.cs" />
-    <Compile Include="Migrations\201806051118396_roles.Designer.cs">
-      <DependentUpon>201806051118396_roles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806180838437_categoriess.cs" />
-    <Compile Include="Migrations\201806180838437_categoriess.Designer.cs">
-      <DependentUpon>201806180838437_categoriess.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201806201108270_Tyas2.0.cs" />
-    <Compile Include="Migrations\201806201108270_Tyas2.0.Designer.cs">
-      <DependentUpon>201806201108270_Tyas2.0.cs</DependentUpon>
+    <Compile Include="Migrations\201807031134119_shoppings.cs" />
+    <Compile Include="Migrations\201807031134119_shoppings.Designer.cs">
+      <DependentUpon>201807031134119_shoppings.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Discount.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\ShoppingCartRemoveViewModel.cs" />
+    <Compile Include="Models\ShoppingCartViewModel.cs" />
     <Compile Include="Models\SubCategory.cs" />
     <Compile Include="Models\SubSubCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -525,6 +516,7 @@
     <Content Include="Views\Categories\_Products.cshtml" />
     <Content Include="Views\Categories\Product.cshtml" />
     <Content Include="Views\Products\_ProductsGrid.cshtml" />
+    <Content Include="Views\ShoppingCart\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -536,27 +528,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201806051052410_loginsystem.resx">
-      <DependentUpon>201806051052410_loginsystem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806051117413_projectbasis.resx">
-      <DependentUpon>201806051117413_projectbasis.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806051118396_roles.resx">
-      <DependentUpon>201806051118396_roles.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806180838437_categoriess.resx">
-      <DependentUpon>201806180838437_categoriess.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201806201108270_Tyas2.0.resx">
-      <DependentUpon>201806201108270_Tyas2.0.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201807031134119_shoppings.resx">
+      <DependentUpon>201807031134119_shoppings.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -69,10 +69,6 @@ C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csprojResol
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.CoreCompileInputs.cache
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.dll
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.pdb
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.loginsystem.resources
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.GenerateResource.Cache
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.projectbasis.resources
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.roles.resources
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\bin\ApplicationInsights.config
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\bin\McLittle.dll.config
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\bin\McLittle.dll
@@ -151,8 +147,6 @@ C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.pdb
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas20.resources
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csprojResolveAssemblyReference.cache
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas.resources
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.categoriess.resources
 D:\Program Files\mcitte\McLittle2\McLittle\bin\ApplicationInsights.config
 D:\Program Files\mcitte\McLittle2\McLittle\bin\McLittle.dll.config
 D:\Program Files\mcitte\McLittle2\McLittle\bin\McLittle.dll
@@ -231,4 +225,5 @@ D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csproj.CoreCompile
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csproj.CopyComplete
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.dll
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.pdb
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.Tyas20.resources
+C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.shoppings.resources
+C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.GenerateResource.Cache

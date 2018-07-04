@@ -7,13 +7,13 @@ namespace McLittle.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class loginsystem : IMigrationMetadata
+    public sealed partial class shoppings : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(loginsystem));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(shoppings));
         
         string IMigrationMetadata.Id
         {
-            get { return "201806051052410_loginsystem"; }
+            get { return "201807031134119_shoppings"; }
         }
         
         string IMigrationMetadata.Source
