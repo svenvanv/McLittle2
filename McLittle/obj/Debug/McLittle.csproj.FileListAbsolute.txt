@@ -225,5 +225,5 @@ D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csproj.CoreCompile
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.csproj.CopyComplete
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.dll
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.pdb
-C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.shoppings.resources
+C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.asdasdf.resources
 C:\Users\Sven\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.csproj.GenerateResource.Cache

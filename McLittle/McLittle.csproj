@@ -205,9 +205,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807031134119_shoppings.cs" />
-    <Compile Include="Migrations\201807031134119_shoppings.Designer.cs">
-      <DependentUpon>201807031134119_shoppings.cs</DependentUpon>
+    <Compile Include="Migrations\201807040858419_asdasdf.cs" />
+    <Compile Include="Migrations\201807040858419_asdasdf.Designer.cs">
+      <DependentUpon>201807040858419_asdasdf.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -534,8 +534,8 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807031134119_shoppings.resx">
-      <DependentUpon>201807031134119_shoppings.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807040858419_asdasdf.resx">
+      <DependentUpon>201807040858419_asdasdf.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

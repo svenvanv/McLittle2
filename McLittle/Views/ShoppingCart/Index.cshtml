@@ -56,7 +56,7 @@
         <tr id="row-@item.RecordId">
             <td>
                 @Html.ActionLink(item.Product.title,
-     "Details", "Store", new { id = item.AlbumId }, null)
+     "Details", "Store", new { id = item.EAN }, null)
             </td>
             <td>
                 @item.Product.price

@@ -126,7 +126,7 @@ namespace McLittle.Models
             {
                 var orderDetail = new OrderDetail
                 {
-                    AlbumId = item.AlbumId,
+                    EAN = item.EAN,
                     OrderId = order.OrderId,
                     UnitPrice = item.Product.price,
                     Quantity = item.Count
