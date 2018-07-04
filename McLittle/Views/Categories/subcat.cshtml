@@ -4,30 +4,56 @@
     ViewBag.Title = "subcat";
 }
 
-<h2>Index</h2>
+<div class="Ts_header">
+    <div class="Ts_dark_overlay Ts_categorieen_header">
+        <div class="jumbotron">
+            <h1>SubCategorie</h1>
+            <p class="lead">Kies een product subcategorie!</p>
+        </div>
+    </div>
+</div>
+
+<div class="empty_space2"></div>
+@foreach (var item in Model)
+{
+    <div class="col-lg-4 col-sm-6 Ts_Catgorie">
+        <label>
+            @Html.ActionLink(item.Title, "SubSubcategory", new { id = item.SubCategoryId })
+        </label>
+    </div>
+
+}
+    <div class="empty_space2"></div>
+    <label class="Ts_vorige_pagina_btn">
+        @Html.ActionLink("Terug Naar vorige pagina", null, null, null, new { href = Request.UrlReferrer })
+    </label>
+<div class="empty_space2"></div>
 
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th></th>
-    </tr>
+@*<h2>Index</h2>
 
-    @foreach (var item in Model)
-    {
+
+    <table class="table">
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-
-                @Html.ActionLink("SubSubcategory", "SubSubcategory", new { id = item.SubCategoryId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.SubCategoryId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.SubCategoryId })
-            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th></th>
         </tr>
-    }
 
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+
+                    @Html.ActionLink("SubSubcategory", "SubSubcategory", new { id = item.SubCategoryId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.SubCategoryId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SubCategoryId })
+                </td>
+            </tr>
+        }
+
+    </table>*@
