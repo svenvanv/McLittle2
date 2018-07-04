@@ -44,11 +44,23 @@
     border: 2px solid #d59334;
     transition: 1s all;
 }
-
-    .Ts_btn:hover {
+.Ts_btn4 a {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FAAF3A;
+    transition: .5s all;
+    padding: 15px 25px;
+    color:#fff;
+}
+    .Ts_btn4 a:hover {
         background-color: #d59334;
-        border: 2px solid #FAAF3A;
+        text-decoration: none;
+        transition: .5s all;
     }
+.Ts_btn:hover {
+    background-color: #d59334;
+    border: 2px solid #FAAF3A;
+}
 
 .navbar-nav a {
     color: rgba(255, 255, 255, 1) !important;
@@ -95,7 +107,7 @@
     .Ts_categorieen_header .jumbotron {
         padding: 26px 11px;
     }
-.Ts_add_to_cart_btn, .Ts_add_to_cart_btn_main a {
+.Ts_add_to_cart_btn a, .Ts_add_to_cart_btn_main a {
     background-color: #3a85fa;
     padding-top: 23px;
     padding-bottom: 23px;
@@ -106,7 +118,7 @@
     text-decoration: none;
 }
 
-    .Ts_add_to_cart_btn:hover, .Ts_add_to_cart_btn_main a:hover {
+    .Ts_add_to_cart_btn a:hover, .Ts_add_to_cart_btn_main a:hover {
         background-color: #3a65fa;
         text-decoration: none;
         color: #ffffff;
@@ -200,7 +212,7 @@
     padding-right: 15px !important;
 }
 
-.btn2 {
+.btn2  a{
     position: absolute;
     bottom: 0;
     left: 4%;
