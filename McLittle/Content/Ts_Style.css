@@ -50,14 +50,23 @@
         border: 2px solid #FAAF3A;
     }
 
-.nav-link a {
+.navbar-nav a {
     color: rgba(255, 255, 255, 1) !important;
 }
-
-    .nav-link a:hover {
-        color: rgba(255, 255, 255, 0.75) !important;
+    .navbar-nav a:hover {
+        color: #3a85fa !important;
         text-decoration: none;
     }
+.navbar-nav li{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.navbar-right a {
+    color: #FAAF3A !important;
+}
+.navbar-right a {
+    color: rgba(58,133,250, 1;);
+}
 
 .Ts_aanbiedingen_card {
     margin-bottom: 30px;
@@ -211,19 +220,19 @@
     right: 15px;
 }
 
-    .Ts_price_main span {
-        transform: rotate(-35deg);
-        font-size: 16px;
-        font-weight: 600;
-        position: absolute;
-        top: 32px;
-        right: 15px;
-    }
+.Ts_price_main span {
+    transform: rotate(-35deg);
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: 32px;
+    right: 19px;
+} 
 
 .Ts_price_tag {
     font-size: 84px;
     transform: rotate(100deg);
-    color: red;
+    color: #FAAF3A !important;
 }
 
 .Ts_aanbiedingen_card .h-100 {
