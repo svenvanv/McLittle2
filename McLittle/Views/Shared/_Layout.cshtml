@@ -20,6 +20,7 @@
     @*<div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
+                <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -48,9 +49,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-link">@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li class="nav-link">@Html.ActionLink("Over", "About", "Home")</li>
-                    <li class="nav-link">@Html.ActionLink("Contact", "Contact")</li>
                     <li class="nav-link">@Html.ActionLink("Producten", "Index", "Products")</li>
+                    <li class="nav-link">@Html.ActionLink("Categorieen", "Index", "Categories")</li>
+                    <li class="nav-link">@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -58,7 +59,6 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
         <footer class="py-5 bg-dark Ts_footer">
             <div class="container">
                 <p class="m-0 text-center text-white">Copyright &copy; MCLITTLE</p>
