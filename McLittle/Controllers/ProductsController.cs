@@ -15,11 +15,22 @@ namespace McLittle.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Products
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder, string searchString)
         {
-            
-        
-            return View(db.product.ToList());
+
+            var products = from s in db.product
+                           select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.title.Contains(searchString)
+                                       || s.fullDesc.Contains(searchString));
+
+                return View(products.ToList());
+            }
+            else
+            {
+                return View(db.product.ToList());
+            }
         }
 
         public ActionResult GetProductsGrid()
