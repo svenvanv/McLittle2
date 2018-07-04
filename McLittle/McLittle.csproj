@@ -194,6 +194,7 @@
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSController.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSProductsController.cs" />
+    <Compile Include="Areas\CMS\Models\Article.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -520,7 +521,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\CMS\Models\" />
     <Folder Include="Areas\CMS\Scripts\" />
     <Folder Include="Content\Uploads\" />
   </ItemGroup>
