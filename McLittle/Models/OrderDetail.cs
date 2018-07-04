@@ -9,7 +9,7 @@ namespace McLittle.Models
     {
         public int OrderDetailId { get; set; }
         public int OrderId { get; set; }
-        public int EAN { get; set; }
+        public long EAN { get; set; }
         public int Quantity { get; set; }
         public float UnitPrice { get; set; }
         public virtual Product Product { get; set; }
