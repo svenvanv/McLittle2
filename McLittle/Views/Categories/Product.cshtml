@@ -29,5 +29,8 @@
             </div>
         }
     </div>
+    <label class="Ts_vorige_pagina_btn">
+        @Html.ActionLink("Terug Naar vorige pagina", null, null, null, new { href = Request.UrlReferrer })
+    </label>
 </div>
 <!-- /.row -->

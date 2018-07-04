@@ -4,31 +4,51 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div class="Ts_header">
+    <div class="Ts_dark_overlay Ts_categorieen_header">
+        <div class="jumbotron">
+            <h1>Categorieen</h1>
+            <p class="lead">Kies hier een product categorie!</p>
+        </div>
+    </div>
+</div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th></th>
-    </tr>
+<div class="empty_space2"></div>
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4 col-sm-6 Ts_Catgorie">
+            <label>
+                @Html.ActionLink(item.Title, "Subcategory", new { id = item.CategoryId })
+            </label>
+        </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.ActionLink("Subcategory", "Subcategory", new { id = item.CategoryId }) |
-            @*@Html.ActionLink("Edit", "Edit", new { id=item.CategoryId }) |*@
-            @Html.ActionLink("Details", "Details", new { id = item.CategoryId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.CategoryId })
-        </td>
-    </tr>
-}
+    }
+        <div class="empty_space2"></div>
 
-</table>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.ActionLink("Subcategory", "Subcategory", new { id = item.CategoryId }) |
+                @Html.ActionLink("Edit", "Edit", new { id=item.CategoryId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.CategoryId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.CategoryId })
+                </td>
+                </tr>
+                }
+
+                </table>*@
