@@ -211,8 +211,23 @@
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
+.Ts_search_form input[type=submit] {
+    padding: 5px 20px !important;
+    border: 0px solid  white!important;
+    margin-left: -5px !important;
+    color: #fff !important;
+    background: #FAAF3A !important;
+}
+.Ts_search_form input:not([type="submit"]):focus {
+    outline: 2px solid #FAAF3A !important;
+}
+.Ts_search_form input:not([type="submit"]) {
+    background-color: #efefef;
+    border: 0px;
+    padding: 5px 10px;
+}
 
-.btn2  a{
+.btn2 a {
     position: absolute;
     bottom: 0;
     left: 4%;
@@ -315,7 +330,7 @@
         margin-bottom: 10px;
         margin-top: 10px;
     }
-    .Ts_Catgorie label a, .Ts_vorige_pagina_btn a {
+.Ts_vorige_pagina_btn a {
         display: block;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
         width: 100%;
@@ -325,7 +340,32 @@
         transition: .5s all;
         color: #fff;
     }
-        .Ts_Catgorie label a:hover, .Ts_vorige_pagina_btn a:hover {
+.Ts_Catgorie label a {
+    bottom: 35%;
+    position: absolute;
+    width: 91.8%;
+    opacity: .7;
+    display: block;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    background: #FAAF3A;
+    padding: 20px 10px;
+    font-size: 17px;
+    transition: 1s all;
+    color: #fff;
+}
+.Ts_Catgorie label:hover > a {
+    padding-top: 23.7%;
+    padding-bottom: 24%;
+    bottom: 15px;
+    font-size: 17px;
+    opacity: 1;
+    vertical-align: middle;
+    background-color: rgba(250, 175, 58, .9);
+    transition: 1s all;
+    text-decoration: none !important;
+}
+}
+.Ts_vorige_pagina_btn a:hover {
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) !important;
             background: #d59334;
             transition: .5s all;

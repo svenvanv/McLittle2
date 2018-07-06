@@ -7,9 +7,9 @@
 <h2>Bekijk hier onze mooie producten</h2>
 @using (Html.BeginForm())
 {
-    <p>
-        Find by name: @Html.TextBox("SearchString")
-        <input type="submit" value="Search" />
+    <p class="Ts_search_form">
+        @Html.TextBox("SearchString")
+        <input type="submit" value="Zoeken" />
     </p>
 }
 <!-- Portfolio Section -->
