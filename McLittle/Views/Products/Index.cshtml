@@ -31,11 +31,7 @@
                         <h6>@Html.DisplayFor(modelItem => item.brand)</h6>
                         <p>@Html.DisplayFor(modelItem => item.shortDesc)</p>
                         <div class="Ts_add_to_cart_btn_main btn3">@Html.ActionLink("Bekijk het product", "Details", new { id = item.productId })</div>
-<<<<<<< HEAD
                         <div class="Ts_add_to_cart_btn btn2"> @Html.ActionLink("In winkelwagen", "AddToCart",   "ShoppingCart", new { id = item.productId }, "")</div>
-=======
-                        <a class="Ts_add_to_cart_btn btn2" href="@Html.ActionLink("In winkelwagen", "AddToCart",   "ShoppingCart", new { id = item.productId }, "")"></a>
->>>>>>> 61ce8c27cee41e43a01e1b66bbbad163ab2d5c5d
                     </div>
 
                 </div>
