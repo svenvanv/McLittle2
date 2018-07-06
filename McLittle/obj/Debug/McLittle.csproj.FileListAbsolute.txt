@@ -232,3 +232,4 @@ C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.
 =======
 D:\Program Files\mcitte\McLittle2\McLittle\obj\Debug\McLittle.Migrations.shoppings.resources
 >>>>>>> 61ce8c27cee41e43a01e1b66bbbad163ab2d5c5d
+C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.asdasdf.resources
