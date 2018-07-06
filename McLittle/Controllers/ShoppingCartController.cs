@@ -31,7 +31,7 @@ namespace McLittle.Controllers
         {
             // Retrieve the album from the database
             var addedAlbum = storeDB.product
-                .Single(product => product.EAN == id);
+                .SingleOrDefault(product => product.EAN == id);
 
             // Add it to the shopping cart
             var cart = ShoppingCart.GetCart(this.HttpContext);
