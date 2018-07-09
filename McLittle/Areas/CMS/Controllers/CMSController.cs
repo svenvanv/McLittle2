@@ -1,4 +1,5 @@
-﻿using System;
+﻿using McLittle.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,14 @@ namespace McLittle.Areas.CMS.Controllers
 {
     public class CMSController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         // GET: CMS/CMS
         public ActionResult Index()
         {
-            return View();
+            int products = db.product.Count();
+            ViewBag.Add(products);
+            
+            return View("Index", products);
         }
     }
 }
