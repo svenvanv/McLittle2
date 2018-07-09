@@ -7,13 +7,13 @@ namespace McLittle.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class asdasdf : IMigrationMetadata
+    public sealed partial class mark : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(asdasdf));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mark));
         
         string IMigrationMetadata.Id
         {
-            get { return "201807040858419_asdasdf"; }
+            get { return "201807090916297_mark"; }
         }
         
         string IMigrationMetadata.Source

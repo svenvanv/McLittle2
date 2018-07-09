@@ -192,6 +192,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
+    <Compile Include="Areas\CMS\Controllers\ArticlesController.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSController.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSProductsController.cs" />
     <Compile Include="Areas\CMS\Models\Article.cs" />
@@ -206,9 +207,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807040858419_asdasdf.cs" />
-    <Compile Include="Migrations\201807040858419_asdasdf.Designer.cs">
-      <DependentUpon>201807040858419_asdasdf.cs</DependentUpon>
+    <Compile Include="Migrations\201807090916297_mark.cs" />
+    <Compile Include="Migrations\201807090916297_mark.Designer.cs">
+      <DependentUpon>201807090916297_mark.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -400,6 +401,11 @@
     <Content Include="Areas\CMS\Views\CMSProducts\Details.cshtml" />
     <Content Include="Areas\CMS\Views\CMSProducts\Delete.cshtml" />
     <Content Include="Areas\CMS\Views\CMSProducts\Create.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Create.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Delete.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Details.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -534,8 +540,8 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807040858419_asdasdf.resx">
-      <DependentUpon>201807040858419_asdasdf.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807090916297_mark.resx">
+      <DependentUpon>201807090916297_mark.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

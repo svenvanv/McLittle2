@@ -2,116 +2,132 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using McLittle.Areas.CMS.Models;
 using McLittle.Models;
 
 namespace McLittle.Areas.CMS.Controllers
 {
-    [Authorize(Roles = "Admin, Webredaction")]
-    public class CMSProductsController : Controller
+    public class ArticlesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: CMS/CMSProducts
+        // GET: CMS/Articles
         public ActionResult Index()
         {
-            return View(db.product.ToList());
+            return View(db.Articles.ToList());
         }
 
-        // GET: CMS/CMSProducts/Details/5
+        // GET: CMS/Articles/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.product.Find(id);
-            if (product == null)
+            Article article = db.Articles.Find(id);
+            if (article == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(article);
         }
 
-        // GET: CMS/CMSProducts/Create
+        // GET: CMS/Articles/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: CMS/CMSProducts/Create
+        // POST: CMS/Articles/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "productId,EAN,title,brand,shortDesc,fullDesc,imageLink,weight,price,category,subCategory,subsubCategory")] Product product)
+        public ActionResult Create([Bind(Include = "ArticleId,Title,Content,ImagePath, ImageUpload")] Article article, HttpPostedFileBase ImageUpload)
         {
             if (ModelState.IsValid)
             {
-                db.product.Add(product);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (ImageUpload != null && ImageUpload.ContentLength > 0)
+                {
+                    // directory aanmaken
+                    var uploadPath = Path.Combine(Server.MapPath("~/Content/Uploads"), article.ArticleId.ToString());
+                    Directory.CreateDirectory(uploadPath);
+                    // TODO: oude afbeelding verwijderen
+                    // bestandsnaam maken, op basis van een random string (GUID)
+                    string fileGuid = Guid.NewGuid().ToString();
+                    string extension = Path.GetExtension(ImageUpload.FileName);
+                    string newFilename = fileGuid + extension;
+                    // bestand opslaan
+                    ImageUpload.SaveAs(Path.Combine(uploadPath, newFilename));
+                    // opslaan in database
+                    article.ImagePath = newFilename;
+                    db.Articles.Add(article);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
             }
 
-            return View(product);
+            return View(article);
         }
 
-        // GET: CMS/CMSProducts/Edit/5
+        // GET: CMS/Articles/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.product.Find(id);
-            if (product == null)
+            Article article = db.Articles.Find(id);
+            if (article == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(article);
         }
 
-        // POST: CMS/CMSProducts/Edit/5
+        // POST: CMS/Articles/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productId,EAN,title,brand,shortDesc,fullDesc,imageLink,weight,price,category,subCategory,subsubCategory")] Product product)
+        public ActionResult Edit([Bind(Include = "ArticleId,Title,Content,ImagePath, ImageUpload")] Article article, HttpPostedFileBase ImageUpload)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(product).State = EntityState.Modified;
+                db.Entry(article).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(product);
+            return View(article);
         }
 
-        // GET: CMS/CMSProducts/Delete/5
+        // GET: CMS/Articles/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.product.Find(id);
-            if (product == null)
+            Article article = db.Articles.Find(id);
+            if (article == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(article);
         }
 
-        // POST: CMS/CMSProducts/Delete/5
+        // POST: CMS/Articles/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Product product = db.product.Find(id);
-            db.product.Remove(product);
+            Article article = db.Articles.Find(id);
+            db.Articles.Remove(article);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
