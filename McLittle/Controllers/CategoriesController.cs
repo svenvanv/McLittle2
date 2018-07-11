@@ -23,7 +23,7 @@ namespace McLittle.Controllers
         // GET: Categories/Details/5
         public ActionResult Subcategory(int? id)
         {
-            var Subcategory = db.subcategory.Where(t => id == t.CategoryId); 
+            var Subcategory = db.subcategory.Where(t => id == t.CategoryId);
             return View("subcat", Subcategory);
         }
 

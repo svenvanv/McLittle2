@@ -395,7 +395,6 @@
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_spinning.scss" />
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="Areas\CMS\Template\vendor\font-awesome\scss\_variables.scss" />
-    <Content Include="Areas\CMS\Views\CMS\Index.cshtml" />
     <Content Include="Areas\CMS\Views\CMSProducts\Index.cshtml" />
     <Content Include="Areas\CMS\Views\CMSProducts\Edit.cshtml" />
     <Content Include="Areas\CMS\Views\CMSProducts\Details.cshtml" />
