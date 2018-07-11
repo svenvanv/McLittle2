@@ -16,8 +16,8 @@
 <div class="empty_space2"></div>
 @foreach (var item in Model)
 {
-<div class="col-lg-3 col-sm-6 Ts_Catgorie">
-    <label style="background-image: url(http://placehold.it/700x400); background-size:cover; min-height:200px;">
+<div class="col-lg-4 col-sm-6 Ts_Catgorie">
+    <label style="background-image: url('@Html.DisplayFor(modelItem => item.ImageUrl)');; background-size:cover; min-height:200px;">
         @Html.ActionLink(item.Title, "SubSubcategory", new { id = item.SubCategoryId })
     </label>
 </div>

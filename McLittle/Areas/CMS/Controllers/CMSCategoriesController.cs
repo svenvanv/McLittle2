@@ -8,45 +8,40 @@ using System.Web;
 using System.Web.Mvc;
 using McLittle.Models;
 
-namespace McLittle.Controllers
+namespace McLittle.Areas.CMS.Controllers
 {
-    public class CategoriesController : Controller
+    public class CMSCategoriesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Categories
+        // GET: CMS/CMSCategories
         public ActionResult Index()
         {
             return View(db.category.ToList());
         }
 
-        // GET: Categories/Details/5
-        public ActionResult Subcategory(int? id)
+        // GET: CMS/CMSCategories/Details/5
+        public ActionResult Details(int? id)
         {
-            var Subcategory = db.subcategory.Where(t => id == t.CategoryId);
-            return View("subcat", Subcategory);
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Category category = db.category.Find(id);
+            if (category == null)
+            {
+                return HttpNotFound();
+            }
+            return View(category);
         }
 
-        public ActionResult SubSubcategory(int? id)
-        {
-            var SubSubcategory = db.subsubCategory.Where(t => id == t.SubCategoryId);
-            return View("SubSubcat", SubSubcategory);
-        }
-
-        public ActionResult Products(int? id)
-        {
-            var titleCat = db.subsubCategory.Where(t => id == t.SubSubCategoryId).Select(t => t.Title);
-            var Products = db.product.Where(t => titleCat.Contains(t.subsubCategory));
-            return View("Product", Products);
-        }
-
-        // GET: Categories/Create
+        // GET: CMS/CMSCategories/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Categories/Create
+        // POST: CMS/CMSCategories/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -63,7 +58,7 @@ namespace McLittle.Controllers
             return View(category);
         }
 
-        // GET: Categories/Edit/5
+        // GET: CMS/CMSCategories/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -78,7 +73,7 @@ namespace McLittle.Controllers
             return View(category);
         }
 
-        // POST: Categories/Edit/5
+        // POST: CMS/CMSCategories/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -94,7 +89,7 @@ namespace McLittle.Controllers
             return View(category);
         }
 
-        // GET: Categories/Delete/5
+        // GET: CMS/CMSCategories/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -109,7 +104,7 @@ namespace McLittle.Controllers
             return View(category);
         }
 
-        // POST: Categories/Delete/5
+        // POST: CMS/CMSCategories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
