@@ -192,8 +192,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
+    <Compile Include="Areas\CMS\Controllers\ArticlesController.cs" />
+    <Compile Include="Areas\CMS\Controllers\CMSCategoriesController.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSController.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSProductsController.cs" />
+    <Compile Include="Areas\CMS\Controllers\CMSSubCategoriesController.cs" />
+    <Compile Include="Areas\CMS\Controllers\CMSSubSubCategoriesController.cs" />
     <Compile Include="Areas\CMS\Models\Article.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
@@ -206,9 +210,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201807040858419_asdasdf.cs" />
-    <Compile Include="Migrations\201807040858419_asdasdf.Designer.cs">
-      <DependentUpon>201807040858419_asdasdf.cs</DependentUpon>
+    <Compile Include="Migrations\201807090916297_mark.cs" />
+    <Compile Include="Migrations\201807090916297_mark.Designer.cs">
+      <DependentUpon>201807090916297_mark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807101140289_tyas.cs" />
+    <Compile Include="Migrations\201807101140289_tyas.Designer.cs">
+      <DependentUpon>201807101140289_tyas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807101201592_tyas4.cs" />
+    <Compile Include="Migrations\201807101201592_tyas4.Designer.cs">
+      <DependentUpon>201807101201592_tyas4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -399,6 +411,26 @@
     <Content Include="Areas\CMS\Views\CMSProducts\Details.cshtml" />
     <Content Include="Areas\CMS\Views\CMSProducts\Delete.cshtml" />
     <Content Include="Areas\CMS\Views\CMSProducts\Create.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Create.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Delete.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Details.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\Articles\Index.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSCategories\Create.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSCategories\Delete.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSCategories\Details.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSCategories\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSCategories\Index.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubCategories\Create.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubCategories\Delete.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubCategories\Details.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubCategories\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubCategories\Index.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubSubCategories\Create.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubSubCategories\Delete.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubSubCategories\Details.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubSubCategories\Edit.cshtml" />
+    <Content Include="Areas\CMS\Views\CMSSubSubCategories\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -485,10 +517,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Categories\Create.cshtml" />
-    <Content Include="Views\Categories\Delete.cshtml" />
     <Content Include="Views\Categories\Details.cshtml" />
-    <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
@@ -533,8 +562,14 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201807040858419_asdasdf.resx">
-      <DependentUpon>201807040858419_asdasdf.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201807090916297_mark.resx">
+      <DependentUpon>201807090916297_mark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807101140289_tyas.resx">
+      <DependentUpon>201807101140289_tyas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807101201592_tyas4.resx">
+      <DependentUpon>201807101201592_tyas4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
