@@ -9,7 +9,7 @@
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("https://use.fontawesome.com/f6ab8da336.js")
 
-
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/Ts_Style.css" rel="stylesheet" />
 
@@ -42,7 +42,7 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">MCLittle</a>
+            <a class="navbar-brand" href="/">MCLittle</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,8 +50,13 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-link">@Html.ActionLink("Home", "Index", "Home")</li>
                     <li class="nav-link">@Html.ActionLink("Producten", "Index", "Products")</li>
+                    <li class="nav-link">@Html.ActionLink("Nieuws", "Index", "article")</li>
                     <li class="nav-link">@Html.ActionLink("Categorieen", "Index", "Categories")</li>
                     <li class="nav-link">@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    @if (User.IsInRole("Admin"))
+    {
+                <li class="nav-link"><a href="/cms/cms">CMS</a></li>
+}
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

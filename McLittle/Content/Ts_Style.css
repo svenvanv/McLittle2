@@ -340,6 +340,15 @@
         transition: .5s all;
         color: #fff;
     }
+.well {
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+.well img{
+    max-width: 188px;
+    margin-right: 40px;
+}
 .Ts_Catgorie label a {
     bottom: 35%;
     position: absolute;
@@ -370,23 +379,32 @@
             transition: .5s all;
             text-decoration: none !important;
         }
+.cms_nav li {
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-
-
-
-
-
-        /*Make Price tag swing*/
-        .Ts_product_main:hover .Ts_price_main {
-            animation: swing linear 1.5s;
-            animation-iteration-count: 2;
-            transform-origin: 100% 0%;
-            animation-fill-mode: forwards; /*when the spec is finished*/
-            -webkit-animation: swing linear 2.5s;
-            -webkit-animation-iteration-count: 2;
-            -webkit-transform-origin: 100% 0%;
-            -webkit-animation-fill-mode: forwards; /*Chrome 16+, Safari 4+*/
-        }
+    .cms_nav li a {
+        color: #fff !important;
+    }
+.Ts_no_padding_top{
+    padding-top:0px;
+}
+.cms_nav .navbar-right li{
+    padding-top: 0px;
+}
+/*Make Price tag swing*/
+.Ts_product_main:hover .Ts_price_main {
+    animation: swing linear 1.5s;
+    animation-iteration-count: 2;
+    transform-origin: 100% 0%;
+    animation-fill-mode: forwards; /*when the spec is finished*/
+    -webkit-animation: swing linear 2.5s;
+    -webkit-animation-iteration-count: 2;
+    -webkit-transform-origin: 100% 0%;
+    -webkit-animation-fill-mode: forwards; /*Chrome 16+, Safari 4+*/
+}
 
 @keyframes swing {
     0% {

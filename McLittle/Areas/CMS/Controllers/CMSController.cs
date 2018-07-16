@@ -13,10 +13,9 @@ namespace McLittle.Areas.CMS.Controllers
         // GET: CMS/CMS
         public ActionResult Index()
         {
-            int products = db.product.Count();
-            ViewBag.Add(products);
             
-            return View("Index", products);
+            
+            return View("Index");
         }
     }
 }

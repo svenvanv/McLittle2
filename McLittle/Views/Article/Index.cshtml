@@ -1,0 +1,26 @@
+﻿@model IEnumerable<McLittle.Areas.CMS.Models.Article>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Nieuwsberichten</h2>
+
+
+@foreach (var item in Model)
+{
+    <div class="well">
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object" src="/content/uploads/0/@Html.DisplayFor(modelItem => item.ImagePath)">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">@Html.DisplayFor(modelItem => item.Title)</h4>
+                <p>
+                    @Html.DisplayFor(modelItem => item.Content)
+                </p>
+            </div>
+        </div>
+    </div>
+}
+

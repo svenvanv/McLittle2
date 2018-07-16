@@ -35,7 +35,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.ImagePath, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            <br /><img src="~/Content/Uploads/@Model.ArticleId/@Model.ImagePath" class="image" /><br />
+            <br /><img src="~/Content/Uploads/0/@Model.ImagePath" class="image" /><br />
             @Html.HiddenFor(model => model.ImagePath, new { htmlAttributes = new { @class = "form-control" } })
             <input type="file" name="ImageUpload" />
             @Html.ValidationMessageFor(model => model.ImagePath, "", new { @class = "text-danger" })
