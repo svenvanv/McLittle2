@@ -12,6 +12,7 @@ using McLittle.Models;
 
 namespace McLittle.Areas.CMS.Controllers
 {
+    [Authorize(Roles = "Admin, Webredaction")]
     public class ArticlesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

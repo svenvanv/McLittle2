@@ -10,6 +10,7 @@ using McLittle.Models;
 
 namespace McLittle.Areas.CMS.Controllers
 {
+    [Authorize(Roles = "Admin, Webredaction")]
     public class CMSSubCategoriesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

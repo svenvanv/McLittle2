@@ -192,6 +192,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
+    <Compile Include="Areas\CMS\Controllers\AccountController.cs" />
     <Compile Include="Areas\CMS\Controllers\ArticlesController.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSCategoriesController.cs" />
     <Compile Include="Areas\CMS\Controllers\CMSController.cs" />
@@ -222,10 +223,6 @@
     <Compile Include="Migrations\201807101201592_tyas4.cs" />
     <Compile Include="Migrations\201807101201592_tyas4.Designer.cs">
       <DependentUpon>201807101201592_tyas4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201807130658564_kjadflk.cs" />
-    <Compile Include="Migrations\201807130658564_kjadflk.Designer.cs">
-      <DependentUpon>201807130658564_kjadflk.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201807130703255_tyas1w3123.cs" />
     <Compile Include="Migrations\201807130703255_tyas1w3123.Designer.cs">
@@ -584,9 +581,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807101201592_tyas4.resx">
       <DependentUpon>201807101201592_tyas4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201807130658564_kjadflk.resx">
-      <DependentUpon>201807130658564_kjadflk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807130703255_tyas1w3123.resx">
       <DependentUpon>201807130703255_tyas1w3123.cs</DependentUpon>

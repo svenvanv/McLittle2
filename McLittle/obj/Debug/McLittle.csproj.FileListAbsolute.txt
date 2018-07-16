@@ -293,7 +293,6 @@ D:\Program Files\mcittle\McLittle2\McLittle\bin\Microsoft.AI.DependencyCollector
 D:\Program Files\mcittle\McLittle2\McLittle\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\Program Files\mcittle\McLittle2\McLittle\bin\Microsoft.AI.WindowsServer.xml
 D:\Program Files\mcittle\McLittle2\McLittle\bin\Microsoft.AI.Web.xml
-D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.Migrations.asdasdf.resources
 D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.csproj.GenerateResource.cache
 D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.csproj.CoreCompileInputs.cache
 D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.csproj.CopyComplete
@@ -304,3 +303,8 @@ C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.kjadflk.resources
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.tyas1w3123.resources
 C:\Users\Tyas\Documents\GitHub\McLittle2\McLittle\obj\Debug\McLittle.Migrations.jashdkjfhas.resources
+D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.Migrations.mark.resources
+D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.Migrations.tyas.resources
+D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.Migrations.tyas4.resources
+D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.Migrations.tyas1w3123.resources
+D:\Program Files\mcittle\McLittle2\McLittle\obj\Debug\McLittle.Migrations.jashdkjfhas.resources

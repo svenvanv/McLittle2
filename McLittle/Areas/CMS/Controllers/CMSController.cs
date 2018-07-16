@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace McLittle.Areas.CMS.Controllers
 {
+    [Authorize(Roles = "Admin, Webredaction")]
     public class CMSController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
